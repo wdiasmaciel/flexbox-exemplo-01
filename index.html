@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            height: 35rem;
+            box-shadow: .5rem .5rem .3rem .01rem gray;
+            border: 1px solid gray;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+        }
+        .item {
+            background-color: red;
+            color: white;
+            border-radius: .5rem;
+            padding: 1rem;
+            margin: .01rem;
+            width: 5rem;
+            height: 5rem;
+        }
+        .item1 {
+            flex-grow: 1;
+        }
+        .item2 {
+            flex-grow: 2;
+        }
+        .item3 {
+            flex-grow: 3;
+        }
+    </style>
 </head>
+
 <body>
-    olá, mundo!
+    <div class="container">
+        <div class="item item1">Item 01</div>
+        <div class="item item3">Item 02</div>
+        <div class="item item1">Item 01</div>
+    </div>
 </body>
+
 </html>
